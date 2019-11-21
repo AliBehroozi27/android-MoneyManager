@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruzbeh.moneymanager.Create">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_login"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.dangarmahesh.demoapp.MainActivity">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextCreateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minEms="3"
+                android:maxEms="12"
+                android:hint="User ID" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordTextInputLayoutC"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextCreatePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minEms="3"
+                android:maxEms="12"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordTextInputLayout"
+            android:layout_margin="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextCreateConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minEms="3"
+                android:maxEms="12"
+                android:inputType="textPassword"
+                android:hint="Confirm Password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/buttonCreate"
+            android:text="Create Account"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/buttons_shape"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+</FrameLayout>
+    <!--android:background="#e94c88"-->
+
+

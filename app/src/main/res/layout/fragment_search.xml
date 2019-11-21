@@ -1,0 +1,181 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="com.example.ruzbeh.moneymanager.Search">
+
+    <FrameLayout
+        android:id="@+id/search_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#212121">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/editTextSearch0"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                app:layout_constraintRight_toRightOf="@id/editTextSearch0">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTextSearch"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:hint=" search ... "
+                    android:maxEms="12" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<EditText-->
+            <!--android:id="@+id/editTextSearch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="19dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:width="150dp"-->
+            <!--android:height="35dp"-->
+            <!--android:maxEms="12"-->
+            <!--app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--<Spinner-->
+            <!--android:id="@+id/spinnerSearch"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:entries="@array/subjects"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--app:layout_constraintLeft_toRightOf="@+id/editTextSearch0"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+            <Button
+                android:id="@+id/buttonSearch"
+                android:layout_width="337dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttons_shape"
+                android:shadowRadius="10"
+                android:text="search"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextSearch0"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/totals_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="120dp">
+
+                <TextView
+                    android:id="@+id/searchLend"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="lend "
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/searchLendTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:width="120dp"
+                    android:text="111111111111"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/searchLend" />
+
+                <TextView
+                    android:id="@+id/searchBorrow"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="borrow "
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toRightOf="@id/searchLendTotal" />
+
+                <TextView
+                    android:id="@+id/searchBorrowTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:width="120dp"
+                    android:text="222222222222"
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toRightOf="@id/searchLendTotal"
+                    app:layout_constraintTop_toBottomOf="@id/searchBorrow" />
+
+                <TextView
+                    android:id="@+id/searchBuy"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="buy "
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toRightOf="@+id/searchBorrowTotal" />
+
+                <TextView
+                    android:id="@+id/searchBuyTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:width="120dp"
+                    android:text="333333333333"
+                    android:textAlignment="center"
+                    app:layout_constraintLeft_toRightOf="@id/searchBorrowTotal"
+                    app:layout_constraintTop_toBottomOf="@id/searchBuy" />
+
+            </android.support.constraint.ConstraintLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/search_result_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="180dp">
+            <!--android:foreground="#1aaa11"-->
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/navigationSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#FF212121"
+                app:itemIconTint="@android:color/white"
+                app:itemTextColor="@android:color/white"
+                app:menu="@menu/navigation" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="395dp"
+                android:background="#212121">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewRecordsSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

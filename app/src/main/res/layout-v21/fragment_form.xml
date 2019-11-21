@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/form_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="com.example.ruzbeh.moneymanager.Form">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:weightSum="6">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/nameTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTextFormName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Name " />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/priceTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTextFormPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Price " />
+            </android.support.design.widget.TextInputLayout>
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+
+            <Spinner
+                android:id="@+id/spinnerFormKind"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:entries="@array/kinds" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/describeTextInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/editTextFormDescribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" describe " />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonDone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttons_shape"
+                android:text="Done"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

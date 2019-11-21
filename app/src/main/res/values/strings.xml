@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MoneyManager</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="kinds">
+        <item>buy</item>
+        <item>borrow</item>
+        <item>lend</item>
+    </string-array>
+
+    <string-array name="subjects">
+        <item>title</item>
+        <item>price</item>
+        <item>date</item>
+        <item>transaction</item>
+        <item>description</item>
+
+    </string-array>
+</resources>
